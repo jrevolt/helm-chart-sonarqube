@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  sonarqube:
+  - apiVersion: v1
+    appVersion: 8.9-community
+    created: "2021-06-28T13:22:40.0764487+02:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.4
+    - condition: nginx.enabled
+      name: ingress-nginx
+      repository: https://kubernetes.github.io/ingress-nginx
+      version: 3.29.0
+    description: SonarQube is an open sourced code quality scanning tool
+    digest: 6e980851ba4cb7b2e5d4dfeb4e864a5f49668b289574c69add571354bbd0ac88
+    home: https://www.sonarqube.org/
+    icon: https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg
+    keywords:
+    - coverage
+    - security
+    - code
+    - quality
+    maintainers:
+    - email: tobias.trabelsi+helm@sonarsource.com
+      name: tobias-trabelsi-sonarsource
+    name: sonarqube
+    sources:
+    - https://github.com/SonarSource/docker-sonarqube
+    urls:
+    - sonarqube-1.0.14.tgz
+    version: 1.0.14
+generated: "2021-06-28T13:22:40.0719095+02:00"
